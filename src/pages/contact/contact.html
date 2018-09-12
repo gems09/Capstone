@@ -1,0 +1,60 @@
+<!--
+  Generated template for the ContactPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Contact Us</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+   
+    <ion-card >
+        <ion-card-content>
+            <ion-card-header color="primary" style="padding-left: 0px; padding-top: 0px">
+                Location Information
+               </ion-card-header>
+          <address>
+              121, Clear Water Bay Road<br> 
+              Clear Water Bay, Kowloon<br>
+              HONG KONG
+          </address>
+          <button ion-button icon-left clear small style="padding-left: 0px; color: #000000;">
+              <ion-icon name="call"></ion-icon>
+              <div>:+852 1234 5678</div>
+          </button>
+          <button ion-button icon-left clear small style="padding-left: 0px; color: #000000;">
+              <ion-icon name="print"></ion-icon>
+              <div>:+852 8765 4321</div>
+          </button>
+          <button ion-button icon-left clear small style="padding-left: 0px; color: #000000;">
+              <ion-icon name="mail"></ion-icon>
+              <div style="text-transform: lowercase;">:confusion@food.net</div>
+          </button>
+        </ion-card-content>
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-left clear small (click)="doCall()">
+              <ion-icon name="call"></ion-icon>
+              <div>CALL</div>
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button icon-left clear small (click)="sendEmail()">
+              <ion-icon name="mail"></ion-icon>
+              <div>EMAIL</div>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+</ion-content>
